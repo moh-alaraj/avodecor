@@ -61,13 +61,9 @@ Route::group([
     Route::resource('orders', 'HowtoOrderController');
     Route::resource('about-us', 'AboutusController');
     Route::resource('groups', 'GroupController');
-
-
-    Route::post('job', 'JoinjobsController@store')->name('job');
-    Route::post('contact', 'ContactController@store')->name('contact');
-
-
 });
+Route::post('job', 'admin\JoinjobsController@store')->name('admin.job');
+Route::post('contact', 'admin\ContactController@store')->name('admin.contact');
 Route::get('blog', 'admin\BlogsController@Cuscreate')->name('admin.blog');
 
 Route::get('/dashboard', function () {

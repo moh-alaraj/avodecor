@@ -17,7 +17,6 @@
         }
         .di{
             text-align: right;
-
         }
 
     </style>

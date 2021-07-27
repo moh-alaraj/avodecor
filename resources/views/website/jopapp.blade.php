@@ -4,7 +4,7 @@
 
 
     @if (session()->has('success'))
-        <div class="alert alert-success">
+        <div class="alert alert-success di">
             {{ session()->get('success') }}
         </div>
     @endif
@@ -17,6 +17,9 @@
             color: white;
             margin-right: 600px;
             margin-top: 50px;
+        }
+        .di{
+            text-align: right;
         }
     </style>
 

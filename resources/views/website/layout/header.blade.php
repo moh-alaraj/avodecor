@@ -13,17 +13,16 @@
 
             <ul id="nav-lists">
                 <li class="close"><span onclick="Hide()">×</span></li>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="servieses.html"></a>خدماتنا</li>
-                <li><a href="works.html"></a>الاعمال</li>
-                <li><a href="about-as.htm"></a>من نحن</li>
-                <li><a href="rating.html"></a>اراء العملاء</li>
-                <li><a href="team.html"></a>فريق العمل</li>
-                <li><a href="jopapp.html"></a>التوظيف</li>
-                <li><a href="blog.html"></a>المدونة</li>
-                <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                <li><a href="treams.html">الشروط والاحكام</a></li>
-                <li><a href="contact.html"></a>اتصل بنا</li>
+                <li><a href="{{route('website.index')}}">الرئيسية</a></li>
+{{--                <li><a href="{{route('website.about')}}"></a>خدماتنا</li>--}}
+                <li><a href="{{route('website.works')}}"></a>الاعمال</li>
+                <li><a href="{{route('website.about')}}"></a>من نحن</li>
+                <li><a href="{{route('website.team')}}"></a>فريق العمل</li>
+                <li><a href="{{route('website.job')}}"></a>التوظيف</li>
+                <li><a href="{{route('website.blog')}}"></a>المدونة</li>
+                <li><a href="{{route('website.privacy')}}">سياسة الخصوصية</a></li>
+                <li><a href="{{route('website.tearms')}}">الشروط والاحكام</a></li>
+                <li><a href="{{route('website.contact')}}"></a>اتصل بنا</li>
             </ul>
 
         </div>
