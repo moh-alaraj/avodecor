@@ -42,20 +42,15 @@
                     </div>
             </div>
         </section>
-        @foreach($ads as $ad)
-            <section class="ads"  style="background-image: url({{$ad->image_link}});
-                background-repeat: no-repeat;
-                width: 100%;
-                width: auto;
-                background-size: 100% 100%;" >
-                {{--                <img src="{{$ad->image_link}}" alt="">--}}
-                <div class="container">
-                    <h1> {{$ad->title}} </h1>
-                    <p>{{$ad->text}}</p>
-                    <a type="button" class="btn btn-light">اطلب تصميمك الان</a>
-
-                </div>
-            </section>
-            @endforeach
+        <section class="ads" style="background-image: url({{$ad->image_link}});
+            background-repeat: no-repeat;
+            width: 100%;
+            width: auto;
+            background-size: 100% 100%;">
+            <div class="container">
+                <h1> {{$ad->title}} </h1>
+                <p>{{$ad->text}}</p>
+            </div>
+        </section>
 
 @endsection

@@ -13,10 +13,10 @@ class ServicesController extends Controller
     public function index($slug) {
 
         $services = Service::where('slug' , '=' , $slug)->firstOrFail();
-        $ads = Advertising::all();
+
         return view('website.services',[
            'services' => $services,
-           'ads' => $ads
+           'ad' => Advertising::inRandomOrder()->limit(1)->first(),
         ]);
     }
 }
