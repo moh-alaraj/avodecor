@@ -5,7 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\JoinJob;
 use App\Notifications\NewJopappCreatedNotification;
-use http\Client\Curl\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class JoinjobsController extends Controller
@@ -25,7 +25,7 @@ class JoinjobsController extends Controller
 
         $join = JoinJob::create($data);
 
-        $user = \App\Models\User::where('type','=','admin')->first();
+        $user = User::where('type','=','admin')->first();
         $user->notify(new NewJopappCreatedNotification($join));
 
         return redirect()->route('website.job')

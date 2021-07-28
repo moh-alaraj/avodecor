@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class BlogsController extends Controller
 {
     public function index(){
-        $blogs = Blog::Latest()->paginate();
+        $blogs = Blog::Latest()->paginate(4);
         return view('website.blog',[
             'blogs' => $blogs
         ]);

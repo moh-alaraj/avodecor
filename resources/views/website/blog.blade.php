@@ -47,16 +47,20 @@
                 </div>
             </div>
             <div class="center">
-                <div class="pagination">
-                    <a href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i></a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
+
+{{--                <div class="pagination">--}}
+{{--                    <a href=""><i class="fas fa-chevron-left" aria-hidden="true"></i></a>--}}
+{{--                    <a href="#" class="active">1</a>--}}
+{{--                    <a href="#">2</a>--}}
+{{--                    <a href="#">3</a>--}}
+{{--                    <a href="#">4</a>--}}
+{{--                    <a href="#">5</a>--}}
+{{--                    <a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i></a>--}}
+                {{$blogs->links('vendor.pagination.semantic-ui')}}
+
+            </div>
             </div>
         </section>
+
 
 @endsection
