@@ -65,6 +65,8 @@ Route::group([
 Route::post('job', 'admin\JoinjobsController@store')->name('admin.job');
 Route::post('contact', 'admin\ContactController@store')->name('admin.contact');
 Route::get('blog', 'admin\BlogsController@Cuscreate')->name('admin.blog');
+Route::post('blog', 'admin\BlogsController@store')->name('admin.blog.store');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -21,10 +21,11 @@
             <div class="container">
                 <a class="Titel">المدونة</a>
 
+                @auth()
                 <div class="table-toolbar mb-3">
                     <a href="{{ route('admin.blog') }}" class="btn but">إنشاء مدونة</a>
                 </div>
-
+                @endauth
                 <div class="row">
                     @foreach($blogs as $blog)
                     <div class="col-lg-3 col-md-4">

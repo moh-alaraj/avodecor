@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,24 +24,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        $this->app->bind('arslug',function ($string ,$separator = '-'){
-//
-//            if (is_null($string)) {
-//                return "";
-//            }
-//
-//            $string = trim($string);
-//
-//            $string = mb_strtolower($string, "UTF-8");;
-//
-//            $string = preg_replace("/[^a-z0-9_\sءاأإآؤئبتثجحخدذرزسشصضطظعغفقكلمنهويةى]#u/", "", $string);
-//
-//            $string = preg_replace("/[\s-]+/", " ", $string);
-//
-//            $string = preg_replace("/[\s_]/", $separator, $string);
-//
-//            return $string;
-//
-//        });
+        if(App::environment('production')){
+
+            $this->app->instance('path.public',function ($app){
+                return base_path('public_html');
+            });
+        }
+
     }
 }
