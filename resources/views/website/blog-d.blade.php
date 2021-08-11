@@ -84,30 +84,6 @@
                                         </div>
                                     </div>
                                     @endforeach
-{{--                                    <div class="col-lg-4 parent">--}}
-{{--                                        <div class="card-artical-a department-card">--}}
-{{--                                            <div class="card-overlay-artical-a card-overlay-department-a">--}}
-{{--                                                <!--=======End-Star-header=========-->--}}
-{{--                                                <span class="date-2"> <i--}}
-{{--                                                        class="far fa-calendar-alt"></i> 29/09/2019 </span>--}}
-{{--                                            </div>--}}
-{{--                                            <img src="img/pic1.png" alt="">--}}
-{{--                                            <h1><a href="">أخطر 7 عمليات جراحية طارئة.. نسبة الوفاة تصل إلى 80 بالمئة--}}
-{{--                                                </a></h1>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-lg-4 parent">--}}
-{{--                                        <div class="card-artical-a department-card">--}}
-{{--                                            <div class="card-overlay-artical-a card-overlay-department-a">--}}
-{{--                                                <!--=======End-Star-header=========-->--}}
-{{--                                                <span class="date-2"> <i--}}
-{{--                                                        class="far fa-calendar-alt"></i> 29/09/2019 </span>--}}
-{{--                                            </div>--}}
-{{--                                            <img src="img/pic1.png" alt="">--}}
-{{--                                            <h1><a href="">أخطر 7 عمليات جراحية طارئة.. نسبة الوفاة تصل إلى 80 بالمئة--}}
-{{--                                                </a></h1>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>

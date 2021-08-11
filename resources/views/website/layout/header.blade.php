@@ -44,6 +44,7 @@
         color: white;
         margin-right: 20px;
     }
+
 </style>
 
 <header class="Navbar-Header">
