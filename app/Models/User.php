@@ -50,7 +50,7 @@ class User extends Authenticatable
     public function getImageLinkAttribute()
     {
         if ($this->photo) {
-            return $this->photo ? url('/') . '/images/' . $this->image : url('/') . '';
+            return $this->photo ? url('/') . '/images/' . $this->photo : url('/') . '';
         }
         return asset('/images/plchold.png');
     }

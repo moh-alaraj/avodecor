@@ -49,6 +49,7 @@ class RegisteredUserController extends Controller
             'photo'  => $fileName->getBasename()
         ]);
 
+
         event(new Registered($user));
 
         Auth::login($user);

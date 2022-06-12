@@ -110,7 +110,7 @@
                         {{\Illuminate\Support\Facades\Auth::user()->name}}
                     </a>
                     <div class="dropdown-menu li" aria-labelledby="navbarDropdown">
-                        <a class="q" href="#" onclick="document.getElementById('logout').submit()">   تسجيل الخروج   </a>
+                        <a class="q" href="#" onclick="document.getElementById('logout').submit()"> تسجيل الخروج </a>
                         <form id="logout" class="d-none" action="{{route('logout')}}" method="post">
                             @csrf
                         </form>
